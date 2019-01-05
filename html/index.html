@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+
+  <!--Title-->
+  <title>Portfolio | Jackey Yang</title>
+
+  <!--Favicon-->
+  <link rel="shortcut icon" type="image/png" href="../images/logo.png"/>
+
+  <!--Metadata-->
+  <meta charset="UTF-8">
+  <meta name="description" content="The portfolio website for front-end web developer, Jackey Yang.">
+
+  <!--Quicksand-->
+  <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+
+  <!--Share Tech-->
+  <link href="https://fonts.googleapis.com/css?family=Share+Tech" rel="stylesheet">
+
+  <!--CSS-->
+  <link rel="stylesheet" href="../css/styles.css">
+
+  <!--JQuery-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+  <!--Javascript-->
+  <script src="../js/scripts.js"></script>
+
+  <!--Quicksand-->
+  <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
+
+  <!--AOS-->
+  <link href="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.css" rel="stylesheet">
+  <script src="https://cdn.rawgit.com/michalsnik/aos/2.1.1/dist/aos.js"></script>
+
+  <!--Font Awesome-->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+
+  <!--SimpleBar-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.css">
+  <script src="https://cdn.jsdelivr.net/npm/simplebar@latest/dist/simplebar.js"></script>
+
+</head>
+
+
+
+<body>
+
+  <div class="nav" id="nav">
+
+    <a href="#home" style="float: left; font-family: 'Share Tech', Helvetica, bgBold, Arial; font-weight: bold; font-size: 2.5vw;">Jackey Yang</a>
+    <a class="nav-contact" href="#contact">Get in Touch</a>
+    <a href="#projects">Projects<div class="stroke"></div></a>
+    <a href="#about">About Me<div class="stroke"></div></a>
+    <a href="#home">Home<div class="stroke"></div></a>
+
+  </div>
+
+
+
+
+
+  <!--Home-->
+  <div class="home" id="home">
+
+    <!--Left Column-->
+    <div class="column-left">
+    </div>
+
+
+
+    <!--Right Column-->
+    <div class="column-right">
+
+      <div class="content">
+
+        <h1>I am a Front-End Developer</h1>
+        <p>specializing in both the sophistication of Web Design and its integration into a functional Back-End.</p>
+        <a class="toProjects" href="#projects">MY PROJECTS</a>
+
+      </div>
+
+    </div>
+
+
+
+    <!--Go to About-->
+    <div class="toAbout">
+
+      <a href="#about"><i class="fas fa-arrow-circle-down"></i></a>
+      <p class="aboutMe">About Me</p>
+
+    </div>
+
+  </div>
+
+
+
+
+
+  <!--About Me-->
+  <div class="about" id="about">
+
+    <!--Content-->
+    <div class="content">
+
+      <!--Header-->
+      <h1>About Me</h1>
+      <h2>Jackey Yang</h2>
+
+      <!--Portrait-->
+      <div class="portrait">
+      </div>
+
+      <!--Panel-->
+      <div class="panel">
+
+        <!--Selector-->
+        <button onclick="openBio()" style="background-color: #52B3D9;">Bio</button>
+        <button onclick="openSkills()" style="background-color: #336E7B;">Skills</button>
+        <button onclick="openCases()" style="background-color: #013243;">Cases</button>
+
+
+
+        <!--Bio-->
+        <div class="bio" id="bio">
+
+          <p>bLorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eu sagittis arcu. Duis et luctus ligula. Aliquam porta quis turpis tempus fringilla. Integer accumsan leo eget nisi facilisis tincidunt. Nunc facilisis porttitor laoreet. Nam cursus porta felis, nec imperdiet justo vestibulum quis. Sed nec urna sodales, imperdiet lorem eu, luctus tortor. </p>
+
+        </div>
+
+        <!--Skills-->
+        <div class="skills" id="skills">
+
+          <p>sLorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eu sagittis arcu. Duis et luctus ligula. Aliquam porta quis turpis tempus fringilla. Integer accumsan leo eget nisi facilisis tincidunt. Nunc facilisis porttitor laoreet. Nam cursus porta felis, nec imperdiet justo vestibulum quis. Sed nec urna sodales, imperdiet lorem eu, luctus tortor. </p>
+
+        </div>
+
+        <!--Cases-->
+        <div class="cases" id="cases">
+
+          <p>cLorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque eu sagittis arcu. Duis et luctus ligula. Aliquam porta quis turpis tempus fringilla. Integer accumsan leo eget nisi facilisis tincidunt. Nunc facilisis porttitor laoreet. Nam cursus porta felis, nec imperdiet justo vestibulum quis. Sed nec urna sodales, imperdiet lorem eu, luctus tortor. </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+
+
+  <!--Break-->
+  <div class="break">
+    <span class="line"></span>
+  </div>
+
+
+
+
+
+  <!--Projects-->
+  <div class="projects" id="projects">
+
+    <!--Content-->
+    <div class="content">
+
+      <!--Header-->
+      <h1>All Projects</h1>
+      <h2>Featured</h2>
+
+
+
+      <!--Box-->
+      <div class="box" data-simplebar>
+
+        <!---->
+        <span class="project" onclick="window.location.href = 'http://www.google.com';">
+
+          <!--Image-->
+          <div class="project-image" style="background-image: url('../images/gamrThumbnail.png');">
+          </div>
+
+          <!--Footer-->
+          <div class="project-footer">
+
+            <h1>GAM/r</h1>
+            <p>Dec 14, 2018</p>
+
+          </div>
+
+        </span>
+
+        <!---->
+        <span class="project">
+
+          <!--Image-->
+          <div class="project-image" style="background-image: url('../images/portrait.jpg');">
+
+
+
+          </div>
+
+          <!--Footer-->
+          <div class="project-footer">
+
+          </div>
+
+        </span>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+
+
+  <!--Break-->
+  <div class="break">
+
+    <span class="line"></span>
+
+  </div>
+
+
+
+
+
+  <!--Contact-->
+  <div class="contact" id="contact">
+
+    <!--Content-->
+    <div class="content">
+
+      <!--Header-->
+      <h1>Contact</h1>
+      <h2>Get in Touch</h2>
+
+      <!--Contact Form-->
+      <div class="contact-form">
+
+        <img src="../images/userIcon.png">
+
+        <p>Jackey Yang</p>
+        <p>Male</p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+
+
+
+
+  <!--Footer-->
+  <div class="footer">
+
+    <!--Social Media-->
+    <a href="https://www.facebook.com/Jackey4520"><img src="../images/facebook.png"></a>
+    <a href="https://www.linkedin.com/in/jackey-yang-11045916a/"><img src="../images/linkedin.png"></a>
+
+    <!--Sub Navigation-->
+    <div class="sub-nav">
+
+      <a href="#home">Home</a>
+      <a href="#about">About Me</a>
+      <a href="#projects">Projects</a>
+      <a href="#contact" style="border-style: none;">Contact</a>
+
+    </div>
+
+    <!--Contact Information-->
+    <div class="contact-info">
+
+      <p><b>Jackey Yang</b> • (731) 267-2870 • <a href="mailto:Jackey.Yang@students.jmcss.org" target="_top">Jackey.Yang@students.jmcss.org</a></p>
+
+    </div>
+
+  </div>
+
+
+
+
+
+  <!--Back to Top-->
+  <a class="toTop" id="toTop" href="#home"><i class="fas fa-chevron-up"></i></a>
+
+</body>
+
+</html>

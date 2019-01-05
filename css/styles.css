@@ -1,0 +1,563 @@
+/*HTML, Body*/
+html, body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+}
+
+/*Disable Outlines*/
+a {
+  outline: hidden;
+}
+
+
+
+
+
+/*Navigation*/
+.nav {
+  position: fixed;
+  width: 100%;
+  height: auto;
+  background-color: white;
+  transition: top 0.2s;
+  z-index: 2;
+}
+
+.nav a {
+  position: relative;
+  float: right;
+  padding: 2vw;
+  text-align: center;
+  color: black;
+  font-size: 1vw;
+  text-decoration: none;
+  outline: none;
+  font-family: 'Quicksand', Helvetica, bgBold, Arial;
+  line-height: 1vw;
+  text-transform: uppercase;
+}
+
+.nav a .stroke {
+  position: absolute;
+  width: 0;
+  height: 0;
+  background-color: #0D777C;
+  transition: all 0.5s;
+}
+
+.nav a:hover > .stroke {
+  width: 70%;
+  height: 0.09vw;
+}
+
+.nav .nav-contact {
+  background-color: #0D0D0D;
+  color: white;
+  transition: all 0.5s;
+}
+
+.nav .nav-contact:hover {
+  background-color: #262626;
+}
+
+
+
+
+
+/*Home*/
+.home {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+
+
+/*Left Column*/
+.column-left {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  background-image: url("../images/portrait.jpg");
+  background-size: cover;
+}
+
+
+
+/*Right Column*/
+.column-right {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  right: 0;
+  background-color: #0D777C;
+}
+
+.column-right .content {
+  position: absolute;
+  margin: 20% 10% 20% 10%;
+  width: 80%%;
+  height: 60%;
+}
+
+.column-right .content h1 {
+  position: relative;
+  color: white;
+  font-size: 3vw;
+  font-family: 'Quicksand', Helvetica, bgBold, Arial;
+  font-weight: 500;
+}
+
+.column-right .content p {
+  position: relative;
+  color: black;
+  font-size: 1.5vw;
+  font-family: 'Quicksand', Helvetica, bgBold, Arial;
+}
+
+.column-right .content a {
+  position: relative;
+  top: 10%;
+  padding: 0.7vw;
+  background-color: black;
+  color: white;
+  font-size: 0.9vw;
+  font-family: 'Quicksand', Helvetica, bgBold, Arial;
+  text-decoration: none;
+  outline: none;
+  transition: background-color 0.5s;
+}
+
+.column-right .content a:hover {
+  background-color: white;
+  color: black;
+}
+
+
+
+/*Go to About*/
+.toAbout {
+  position: absolute;
+  top: 90%;
+  left: 48.5%;
+  font-size: 3vw;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+}
+
+.toAbout:active {
+  top: 89.5%;
+}
+
+.toAbout:hover > .aboutMe {
+  width: 5vw;
+  top: -65%;
+  left: -30%;
+  font-size: 1vw;
+  color: white;
+  font-family: 'Quicksand', Helvetica, bgBold, Arial;
+  z-index: 1;
+}
+
+.toAbout a {
+  outline: none;
+}
+
+.toAbout i {
+  background-color: white;
+  color: black;
+  border-radius: 100vw;
+}
+
+.aboutMe {
+  position: absolute;
+  width: 100%;
+  left: -10%;
+  top: 0;
+  font-size: 0.5vw;
+  color: black;
+  font-family: 'Quicksand', Helvetica, bgBold, Arial;
+  z-index: -1;
+  transition: all 0.3s;
+}
+
+
+
+
+
+/*Break*/
+.break {
+  position: relative;
+  width: 100%;
+  height: 10%;
+  text-align: center;
+}
+
+.break .line {
+  position: absolute;
+  width: 50%;
+  height: 0.1vw;
+  top: 50%;
+  left: 25%;
+  background-color: black;
+}
+
+
+
+
+
+/*About Me*/
+.about {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.about .content {
+  position: absolute;
+  width: 90%;
+  height: 90%;
+  margin: 5%;
+}
+
+.about .content h1 {
+  position: relative;
+  text-align: center;
+  color: black;
+  font-family: 'Quicksand', Helvetica, bgBold, Arial;
+  font-size: 2.5vw;
+  font-weight: bold;
+}
+
+.about .content h2 {
+  position: relative;
+  text-align: center;
+  color: gray;
+  font-family: 'Quicksand', Helvetica, bgBold, Arial;
+  font-size: 1.2vw;
+  font-weight: lighter;
+}
+
+/*Portrait*/
+.portrait {
+  position: relative;
+  width: 20%;
+  height: 70%;
+  float: left;
+  background-image: url("../images/portrait2.png");
+  background-size: cover;
+}
+
+/*Panel*/
+.panel {
+  position: relative;
+  width: 80%;
+  height: 80%;
+  top: 5%;
+  float: right;
+  text-align: center;
+}
+
+.panel button {
+  position: relative;
+  margin: 5%;
+  width: 4vw;
+  height: 4vw;
+  padding: 0;
+  border-style: none;
+  border-radius: 50%;
+  color: white;
+  font-family: 'Quicksand', Helvetica, bgBold, Arial;
+  font-size: 1vw;
+  text-align: center;
+  cursor: pointer;
+}
+
+.panel button:active {
+  top: -0.5%;
+  padding: 0;
+}
+
+/*Bio*/
+.panel .bio {
+  position: absolute;
+  top: 25%;
+  width: 100%;
+  height: 75%;
+  text-align: left;
+  visibility: hidden;
+}
+
+.panel .bio p {
+  margin: 5% 20% 5% 20%;
+  color: black;
+  font-family: 'Quicksand', Helvetica, bgBold, Arial;
+  font-size: 1.2vw;
+}
+
+/*Skills*/
+.panel .skills {
+  position: absolute;
+  top: 25%;
+  width: 100%;
+  height: 75%;
+  text-align: left;
+  visibility: hidden;
+}
+
+.panel .skills p {
+  margin: 5% 20% 5% 20%;
+  color: black;
+  font-family: 'Quicksand', Helvetica, bgBold, Arial;
+  font-size: 1.2vw;
+}
+
+/*Cases*/
+.panel .cases {
+  position: absolute;
+  top: 25%;
+  width: 100%;
+  height: 75%;
+  text-align: left;
+  visibility: hidden;
+}
+
+.panel .cases p {
+  margin: 5% 20% 5% 20%;
+  color: black;
+  font-family: 'Quicksand', Helvetica, bgBold, Arial;
+  font-size: 1.2vw;
+}
+
+
+
+
+
+/*Projects*/
+.projects {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.projects .content {
+  position: absolute;
+  width: 90%;
+  height: 90%;
+  margin: 5%;
+}
+
+.projects .content h1 {
+  position: relative;
+  text-align: center;
+  color: black;
+  font-family: 'Quicksand', Helvetica, bgBold, Arial;
+  font-size: 2.5vw;
+  font-weight: bold;
+}
+
+.projects .content h2 {
+  position: relative;
+  text-align: center;
+  color: gray;
+  font-family: 'Quicksand', Helvetica, bgBold, Arial;
+  font-size: 1.2vw;
+  font-weight: lighter;
+}
+
+
+
+/*Box*/
+.projects .content .box {
+  position: absolute;
+  margin: 2%;
+  width: 96%;
+  height: 60%;
+  background-image: linear-gradient(to bottom right, #C0C0C0, white);
+  white-space: nowrap;
+  border: solid 0.1vw black;
+  border-radius: 3vw 0;
+  box-shadow: 1vw 1vw 0.5vw grey;
+  text-align: center;
+  overflow: auto;
+}
+
+.projects .content .box .project {
+  position: relative;
+  margin: 2%;
+  margin-left: 1.5%;
+  margin-right: 1.5%;
+  width: 30%;
+  height: 86%;
+  display: inline-block ;
+  float: left;
+}
+
+.projects .content .box .project .project-image {
+  position: relative;
+  width: 100%;
+  height: 70%;
+  background-size: cover;
+  background-position: center;
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.projects .content .box .project .project-image:hover {
+  opacity: 0.6;
+}
+
+.projects .content .box .project .project-image:active {
+  opacity: 0.7;
+}
+
+.projects .content .box .project .project-footer {
+  position: relative;
+  width: 100%;
+  height: 30%;
+  border: solid 0.1vw black;
+}
+
+.projects .content .box .project .project-footer h1 {
+  margin: 0;
+  margin-top: 7%;
+  color: black;
+  font-family: 'Quicksand', Helvetica, bgBold, Arial;
+  font-size: 1.5vw;
+}
+
+.projects .content .box .project .project-footer p {
+  margin: 0;
+  color: gray;
+  font-family: 'Quicksand', Helvetica, bgBold, Arial;
+  font-size: 0.8vw;
+}
+
+
+
+
+
+/*Contact*/
+.contact {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.contact .content {
+  position: relative;
+  width: 90%;
+  height: 90%;
+  margin: 5%;
+}
+
+.contact .content h1 {
+  position: relative;
+  text-align: center;
+  color: black;
+  font-family: 'Quicksand', Helvetica, bgBold, Arial;
+  font-size: 2.5vw;
+  font-weight: bold;
+}
+
+.contact .content h2 {
+  position: relative;
+  text-align: center;
+  color: gray;
+  font-family: 'Quicksand', Helvetica, bgBold, Arial;
+  font-size: 1.2vw;
+  font-weight: lighter;
+}
+
+/*Contact Form*/
+.contact .content .contact-form {
+  position: relative;
+  width: 80%;
+  height: 60%;
+  margin: 10%;
+  border: solid 0.1vw black;
+  border-top-style: none;
+  border-bottom-style: none;
+}
+
+.contact .content .contact-form img {
+  position: relative;
+  margin: 5%;
+  width: 10vw;
+  height: 10vw;
+  border: solid 0.5vw black;
+  border-radius: 50%;
+}
+
+
+
+
+
+/*Footer*/
+.footer {
+  position: relative;
+  width: 100%;
+  height: 30%;
+  background-color: black;
+  text-align: center;
+}
+
+.footer a {
+}
+
+.footer a img {
+  width: 2.5vw;
+  height: auto;
+  padding: 2vw;
+}
+
+.footer .sub-nav {
+  position: relative;
+}
+
+.footer .sub-nav a {
+  position: relative;
+  color: white;
+  font-family: 'Quicksand', Helvetica, bgBold, Arial;
+  font-size: 1vw;
+  text-decoration: none;
+  border-right: solid 0.1vw white;
+  padding: 0.5vw;
+}
+
+.footer .sub-nav a:hover {
+  text-decoration: underline;
+}
+
+.footer .contact-info {
+  position: relative;
+  padding: 1vw;
+}
+
+.footer .contact-info p {
+  color: white;
+  font-family: 'Quicksand', Helvetica, bgBold, Arial;
+  font-size: 1vw;
+}
+
+.footer .contact-info p a {
+  color: white;
+  text-decoration: underline;
+}
+
+
+
+
+
+/*Back to Top*/
+.toTop {
+  position: fixed;
+  top: 90%;
+  right: 3%;
+  font-size: 2vw;
+  color: black;
+  opacity: 0;
+  transition: all 0.5s;
+}
